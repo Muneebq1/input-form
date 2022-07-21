@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome To This Website</h1>
-    <fieldset class="container">
-        <legend>input</legend>
-       <label for="">First Name: </label> <br>
-       <input type="text" id="first name" required placeholder="Enter First Name"> <br>
-       <label for="">Last Name: </label> <br>
-       <input type="text" id="Last name" required placeholder="Enter Last Name"> <br>
-       <label for="">Email: </label> <br>
-       <input type="email" id="email" required placeholder="enter Email"> <br>
-       <label for="">address:</label> <br>
-       <input type="text" id="address" required placeholder="Enter your address"> <br><br>
-    </fieldset>
+    <form action="">
+<div class="heading">
+    <h1>" Welcome To <h1 class="h1"> This Website "</h1></h1>
+</div>
+        <fieldset class="container">
+            <legend id="leg"><b>Sign Up Form </b></legend>
+
+            <br>
+            <label for="firstname">FirstName :</label>
+            <br>
+            <input type="text" id="firstname" required placeholder="firstname"><br>
+            <label for="lastname">LastName :</label>
+            <br>
+            <input type="text" id="lastname" required placeholder="lastname"><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" required placeholder="Email"><br>
+            <label for="password">Password :</label>
+            <br>
+            <input type="password" id="password" required placeholder="password"><br>
+            <label for="confirmpassword">Confirm Password :</label>
+            <br>
+            <input type="password" id="confirmpassword" required placeholder="confirmpassword"><br>
+            <label for="address">Address :</label>
+            <br>
+            <input type="text" id="address" required placeholder="address">
+            <br><br>
+
+            <div>
+                <input type="submit" value="Sign Up" id="button"><br>
+            </div>
+
+
+    </form>
+
+</fieldset>
 </body>
+
 </html>
