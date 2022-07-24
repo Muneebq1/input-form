@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <form action="">
-<div class="heading">
-    <h1>" Welcome To <h1 class="h1"> This Website "</h1></h1>
-</div>
+    <form onsubmit="signup(); return false ">
+        <div class="heading">
+            <h1>" Welcome To <h1 class="h1"> This Website "</h1>
+            </h1>
+        </div>
         <fieldset class="container">
             <legend id="leg"><b>Sign Up Form </b></legend>
 
@@ -33,19 +34,14 @@
             <label for="confirmpassword">Confirm Password :</label>
             <br>
             <input type="password" id="confirmpassword" required placeholder="confirmpassword"><br>
-            <label for="address">Address :</label>
-            <br>
-            <input type="text" id="address" required placeholder="address">
-            <br><br>
-
+<br>
             <div>
                 <input type="submit" value="Sign Up" id="button"><br>
             </div>
 
-
+        </fieldset>
     </form>
-
-</fieldset>
+    <script src="app.js"></script>
 </body>
 
 </html>
