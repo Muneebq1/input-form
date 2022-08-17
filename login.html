@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <h1 id="heading Thanks">"THANKS FOR SIGN UP" </h1>
 
     <div class="box">
         <fieldset class="container2">
             <legend>Login Form</legend>
-            <form onsubmit="login(); return false;">
-                
-                <label for="login_email">Email:</label><br>
-                <input type="email" id="login_email" required placeholder="Email">
+
+            <form onsubmit=" login(); return false" >
+                <label for="login_username">Username :</label><br>
+                <input type="text" id="login_username" required placeholder="Enter username">
                 <br>
-                <label for="login_password">Password :</label>
+                <label for="login_password"><i class="material-icons">Password :</i></label>
                 <br>
-                <input type="password" id="login_password" required placeholder="password">
+                <input type="password" id="login_password" required placeholder="Enter password">
                 <br><br>
                 <div>
-                    <input  type="submit" value="Login" id="button">
+                    <input type="submit" value="Login" id="button">
                 </div>
-                <p class="red">Dont have an account? Click here to SignUp</p>
-                <a href="index.html">Signup</a>
+                <p class="red">Dont have an account? <a href="index.html">Click...</a></p>
+
             </form>
         </fieldset>
     </div>
