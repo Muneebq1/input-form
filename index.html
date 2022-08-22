@@ -5,43 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form onsubmit="signup(); return false ">
+
+    <form onsubmit="doSignup(event)">
+
         <div class="heading">
-            <h1>" Welcome To <h1 class="h1"> This Website "</h1>
-            </h1>
+            <h1>" Welcome To <span class="h1"> This Website "</span></h1>
+
         </div>
+
         <fieldset class="container">
+
             <legend id="leg"><b>Sign Up Form </b></legend>
             <br>
 
-            <label for="firstname">FirstName :</label>
-            <br>
-            <input type="text" id="firstname" required placeholder="firstname"><br>
-            <label for="lastname">LastName :</label>
-            <br>
-            <input type="text" id="lastname" required placeholder="lastname"><br>
+            First name:
+            <input id="firstName" type="text" required placeholder="First name"> <br>
 
-            <label for="email">Email :</label><br>
-            <input type="email" id="email" required placeholder="Email"><br>
-            <label for="password">Password :</label>
+            Last name:
+            <input id="lastName" type="text" required placeholder="Last name"> <br>
+
+            Gender:
             <br>
-            <input type="password" id="password" required placeholder="password"><br>
-            <label for="confirmpassword">Confirm Password :</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
             <br>
-            <input type="password" id="confirmpassword" required placeholder="confirmpassword"><br>
+            Email:
+            <input id="email" type="email" required placeholder="Email"> <br>
+
+            Password:
+            <input id="password" type="password" required placeholder="Password"> <br>
+
+            Confirm Password:
+            <input id="rePassword" type="password" required placeholder="confirm password"> <br>
             <br>
-            <div>
-                <input type="submit" value="Sign Up" id="button"><br>
-            </div>
-            <a href="login.html">Log In</a>
-        </fieldset>
+
+            <button type="submit">Signup</button>
     </form>
-    <script src="app.js"></script>
+    <br>
+    Already have an account? <a href="./login/login.html">Login</a>
+
+    <p id="error" style="color: red"></p>
+    <p id="result"></p>
+
+    </fieldset>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>

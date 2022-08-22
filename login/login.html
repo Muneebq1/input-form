@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+      <div class="heading">
+        <h1>"THANKS FOR<span class="h1"> SIGN UP"</span></h1>
+        
+    </div>
+    
+    <!-- <div class="box"> -->
+        <form onsubmit="doLogin(event)">
+
+            <fieldset class="container2">
+            
+                <legend>Login Form</legend>
+
+
+
+                Email:
+                <input id="email" type="email" required> <br>
+
+                Password:
+                <input id="password" type="password" required min="6">
+
+                <span id="showPasswordButton" onclick="toggleShowPassword()" class="btn">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </span>
+
+                <br>
+                <button type="submit">Login</button>
+                
+                <br>
+                Don't have an account? <a href="../index.html">Signup</a>
+                
+                <p id="error" style="color: red"></p>
+                <p id="result"></p>
+                
+            </fieldset>
+        </form>
+    <!-- </div> -->
+
+    <script src="login.js"></script>
+</body>
+
+</html>
