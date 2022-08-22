@@ -11,41 +11,45 @@
 </head>
 
 <body>
-      <div class="heading">
+    <div class="heading">
         <h1>"THANKS FOR<span class="h1"> SIGN UP"</span></h1>
-        
+
     </div>
-    
+
     <!-- <div class="box"> -->
-        <form onsubmit="doLogin(event)">
+    <form onsubmit="doLogin(event)">
 
-            <fieldset class="container2">
+        <fieldset class="container2">
+
+            <legend>Login Form</legend>
+
+
+
+            Email:
+            <input id="email" type="email" required placeholder="Email"> <br> <br>
+
+
+            Password:
             
-                <legend>Login Form</legend>
-
-
-
-                Email:
-                <input id="email" type="email" required> <br>
-
-                Password:
-                <input id="password" type="password" required min="6">
+            <div class="icon">
+                <input id="password" type="password" required placeholder="Password" >
 
                 <span id="showPasswordButton" onclick="toggleShowPassword()" class="btn">
-                    <i class="fa-solid fa-eye-slash"></i>
-                </span>
+                    <i class="fa-solid fa-eye-slash"></i></span>
+            </div>
 
-                <br>
-                <button type="submit">Login</button>
-                
-                <br>
-                Don't have an account? <a href="../index.html">Signup</a>
-                
-                <p id="error" style="color: red"></p>
-                <p id="result"></p>
-                
-            </fieldset>
-        </form>
+
+            <br>
+            <button type="submit">Login</button>
+
+            <br> <br>
+            Don't have an account? <a href="../index.html">Signup</a>
+
+            <p id="error" style="color: red"></p>
+            <p id="result"></p>
+
+        </fieldset>
+    </form>
     <!-- </div> -->
 
     <script src="login.js"></script>
