@@ -124,3 +124,10 @@ a:hover {
     height: 30px;
     margin-left: 30px;
 }
+.images{
+    display: flex;
+}
+img{
+    width: auto;
+    height: 440px;
+}
