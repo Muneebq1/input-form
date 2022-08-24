@@ -16,6 +16,8 @@ let loggedInUser = {};
     document.querySelector("#name").innerText =
         `${loggedInUser.firstName} ${loggedInUser.lastName}`;
 
+        
+
 })()
 
 function doLogout() {
